@@ -1,0 +1,86 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+
+<body>
+<div class="w3-container w3-center w3-card-4">
+    <img src="BB1.jpg" width="100%" height="50%"></img>
+</div>
+
+<div class="w3-bar w3-brown">
+ <button class="w3-bar-item w3-button" onclick="openKota('cover')">Home</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('makeup')">Makeup</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('skincare')">Skincare</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('haircare')">Haircare</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('bodycare')">Bodycare</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('korean')">Korean Product</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('local')">Local Product</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('tools')">Beauty Tools</button>
+</div>
+
+<div id="cover" class="w3-container kota w3-animate-top w3-center w3-grey" style="display:block">
+    <h1>WELCOME</h1>
+    <h2>Disini Akan Menampilkan Berbagai Produk Kecantikan</h2>
+    <h3>Silahkan Tekan Tombol Menu Diatas</h3>
+</div>
+
+<div id="makeup" class="w3-container kota w3-animate-top w3-center" style="display:none">
+    <h2>Barenbliss Eyeshadow</h2>
+    <img src="eyeshadoe.jpg" width="25%">
+    <h2>Barenbliss Lip Tint</h2>
+    <img src="lip1.jpg" width="20%">
+</div>
+
+<div id="skincare" class="w3-container kota w3-animate-bottom w3-center" style="display:none">
+    <h2>Acnes Face Wash</h2>
+    <img src="acnes.jpg" width="30%">
+    <h2>Skintific Moisturizer</h2>
+    <img src="skintific.jpg" width="30%">
+</div>
+
+<div id="haircare" class="w3-container kota w3-animate-bottom w3-center" style="display:none">
+    <h2>Serasoft Shampoo</h2>
+    <img src="shampoo.jpg" width="25%">
+    <h2>Pantene Conditioner</h2>
+    <img src="pantene.jpg" width="30%">
+</div>
+
+<div id="bodycare" class="w3-container kota w3-animate-left w3-center" style="display:none">
+    <h2>Scarlet Body Wash</h2>
+    <img src="sabun.jpg" width="30%">
+    <h2>Scarlet Scrub</h2>
+    <img src="scrub.jpg" width="30%">
+</div>
+
+<div id="korean" class="w3-container kota w3-animate-right w3-center" style="display:none">
+    <h2>Corsx</h2>
+    <img src="corsx.jpg" width="30%">
+    <h3>Axis-Y</h3>
+    <img src="axis.jpg" width="30%">
+</div>
+
+<div id="local" class="w3-container kota w3-opacity w3-center" style="display:none">
+    <h2>Looke</h2>
+    <img src="looke.jpg" width="25%">
+    <h2>Avoskin</h2>
+    <img src="avoskin.jpeg" width="25%">
+</div>
+
+<div id="tools" class="w3-container kota w3-animate-fading w3-center" style="display:none">
+    <h2>Aeris Beauty Set</h2>
+    <img src="brush.jpg" width="25%">
+</div>
+
+<script>
+function openKota(namakota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namakota).style.display = "block"; 
+}
+
+</script>
+</body>
+</html>
